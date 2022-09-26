@@ -1,0 +1,29 @@
+.content-main {
+  margin: 1.5rem auto;
+  padding: 30px 3%;
+}
+.content-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.button {
+  background-color: #bb9c84;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  padding: 0.4rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+}
+.button:hover,
+.button:focus {
+  background-color: #967e76;
+}
+
+.select {
+  height: 2rem;
+  width: 6rem;
+  outline: none;
+  border-radius: 0.25rem;
+}
