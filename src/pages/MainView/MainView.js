@@ -12,17 +12,16 @@ const MainView = () => {
       <SearchForm />
       <section className={styles["content-main"]}>
         <div className={styles["content-header"]}>
-          <h2 className="content-title">Products</h2>
+          <h2>Products</h2>
           <div>
             <div className={styles.button}>Create</div>
           </div>
           <select className={styles.select}>
-            <option>Sort ⬆ </option>
-            <option>Sort ⬇ </option>
+            <option>Sort ⬆</option>
+            <option>Sort ⬇</option>
           </select>
         </div>
       </section>
-
       <ProductsList />
       <Pagination />
     </>
