@@ -1,12 +1,13 @@
 import React from "react";
 
 import styles from "./Header.module.css";
+import HeaderCartButton from "./HeaderCartButton";
 
 const Header = () => {
   return (
     <header className={styles.header}>
       <h1>QualiumSystems</h1>
-      <button>Cart</button>
+      <HeaderCartButton />
     </header>
   );
 };
