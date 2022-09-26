@@ -1,7 +1,12 @@
 import React from "react";
+import ProductsList from "../../components/Products/ProductsList";
 
 const MainView = () => {
-  return <div>MainView</div>;
+  return (
+    <>
+      <ProductsList />
+    </>
+  );
 };
 
 export default MainView;
