@@ -1,0 +1,33 @@
+.input-group {
+  margin-top: 8rem;
+  display: flex;
+  height: 2.5rem;
+  justify-content: center;
+}
+.input {
+  width: 50%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 0.5rem;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.search-button {
+  width: 10%;
+  background-color: #bb9c84;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  border: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+}
+.search-button:hover,
+.search-button:active {
+  background-color: #8a4c33;
+}
