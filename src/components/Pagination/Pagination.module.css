@@ -1,0 +1,20 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.page {
+  background-color: #bb9c84;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+  padding: 0.8rem 2rem;
+}
+
+.active_page {
+  background-color: #967e76;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding: 0.8rem 2rem;
+}
