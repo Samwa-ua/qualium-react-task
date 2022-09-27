@@ -7,6 +7,11 @@ import Card from "../UI/Card";
 import Button from "../UI/Button";
 
 const ProductItem = (props) => {
+  const handleDelete = () => {
+    fetch("http://localhost:3001/products/" + props.id, {
+      method: "DELETE",
+    });
+  };
   return (
     <Card className={styles.product}>
       <h3>{props.title}</h3>
@@ -16,7 +21,9 @@ const ProductItem = (props) => {
         <Link to={`/edit/${props.id}`}>
           <Button>Edit</Button>
         </Link>
-        <Button className={styles.button}>Delete</Button>
+        <Button className={styles.button} onClick={handleDelete}>
+          Delete
+        </Button>
         <Button>Add to cart</Button>
       </div>
     </Card>
