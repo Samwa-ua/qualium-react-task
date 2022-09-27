@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Card from "../UI/Cards";
 
 import styles from "./ProductItem.module.css";
+
+import Card from "../UI/Card";
 
 const ProductItem = (props) => {
   return (
