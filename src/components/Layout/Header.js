@@ -8,10 +8,10 @@ import HeaderCartButton from "./HeaderCartButton";
 const Header = () => {
   return (
     <header className={styles.header}>
-      <Link to="/" style={{ color: "inherit", textDecoration: "inherit" }}>
+      <Link to="/">
         <h1>QualiumSystems</h1>
       </Link>
-      <Link to="cart" style={{ textDecoration: "none" }}>
+      <Link to="/cart">
         <HeaderCartButton />
       </Link>
     </header>

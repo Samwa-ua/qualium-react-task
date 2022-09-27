@@ -5,6 +5,7 @@ import styles from "./MainView.module.css";
 import SearchForm from "../../components/SearchForm/SearchForm";
 import ProductsList from "../../components/Products/ProductsList";
 import Pagination from "../../components/Pagination/Pagination";
+import { Link } from "react-router-dom";
 
 const MainView = () => {
   return (
@@ -14,7 +15,9 @@ const MainView = () => {
         <div className={styles["content-header"]}>
           <h2>Products</h2>
           <div>
-            <div className={styles.button}>Create</div>
+            <button className={styles.button}>
+              <Link to="/edit/:id">Create</Link>
+            </button>
           </div>
           <select className={styles.select}>
             <option>Sort ⬆</option>

@@ -16,3 +16,8 @@ body {
 .main-wrapper {
   margin: 6rem auto;
 }
+
+a:-webkit-any-link {
+  text-decoration: none;
+  color: inherit;
+}
