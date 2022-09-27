@@ -12,3 +12,7 @@ body {
   margin: 0;
   background-color: #656c72;
 }
+
+.main-wrapper {
+  margin: 6rem auto;
+}
