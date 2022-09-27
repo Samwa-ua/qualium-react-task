@@ -14,11 +14,9 @@ const MainView = () => {
       <section className={styles["content-main"]}>
         <div className={styles["content-header"]}>
           <h2>Products</h2>
-          <div>
-            <button className={styles.button}>
-              <Link to="/edit/:id">Create</Link>
-            </button>
-          </div>
+          <Link to="/edit/:id">
+            <button className={styles.button}>Create</button>
+          </Link>
           <select className={styles.select}>
             <option>Sort ⬆</option>
             <option>Sort ⬇</option>

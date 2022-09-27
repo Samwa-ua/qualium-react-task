@@ -1,0 +1,24 @@
+.centered {
+  text-align: center;
+  justify-content: center;
+}
+
+.title {
+  padding-top: 3rem;
+  font-size: 2rem;
+}
+
+.button {
+  border: none;
+  background-color: #bb9c84;
+  color: white;
+  cursor: pointer;
+  padding: 0.6rem 0.7rem;
+  border-radius: 10px;
+  font-weight: bold;
+  margin-top: 3rem;
+}
+.button:hover,
+.button:active {
+  background-color: #8a4c33;
+}

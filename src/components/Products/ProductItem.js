@@ -11,9 +11,9 @@ const ProductItem = (props) => {
       <div className={styles.price}>{props.price}</div>
       <div className={styles.description}>{props.description}</div>
       <div className={styles.product__button_wrapper}>
-        <button className={styles.button}>
-          <Link to="/edit/:id">Edit</Link>
-        </button>
+        <Link to="/edit/:id">
+          <button className={styles.button}>Edit</button>
+        </Link>
         <button className={`${styles.button} ${styles.delete}`}>Delete</button>
         <button className={styles.button}>Add to cart</button>
       </div>

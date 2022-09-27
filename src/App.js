@@ -5,6 +5,7 @@ import CartView from "./pages/CartView/CartView";
 import CreateView from "./pages/CreateView/CreateView";
 import EditView from "./pages/EditView/EditView";
 import MainView from "./pages/MainView/MainView";
+import NotFound from "./pages/NotFound/NotFound";
 
 function App() {
   return (
@@ -23,6 +24,9 @@ function App() {
           </Route>
           <Route path="/cart">
             <CartView />
+          </Route>
+          <Route path="*">
+            <NotFound />
           </Route>
         </Switch>
       </main>
