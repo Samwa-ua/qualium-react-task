@@ -1,0 +1,35 @@
+.create {
+  display: flex;
+  justify-content: center;
+  margin: 2rem auto;
+  padding: 2rem;
+}
+.create p {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #464646;
+}
+
+.btn {
+  margin-left: 7rem;
+  background-color: #812121 !important;
+}
+.btn:hover,
+.btn.focus {
+  margin-left: 7rem;
+  background-color: #c51d1d !important;
+}
+
+.textarea {
+  width: 320px;
+  font: inherit;
+  padding: 0.35rem 0.35rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 0.5rem;
+}
+.textarea:focus {
+  outline: none;
+  border-color: #967e76;
+  background: #dbd0cc;
+}

@@ -15,7 +15,7 @@ const MainView = () => {
       <section className={styles["content-main"]}>
         <div className={styles["content-header"]}>
           <h2>Products</h2>
-          <Link to="/edit/:id">
+          <Link to="/create">
             <Button>Create</Button>
           </Link>
           <select className={styles.select}>
