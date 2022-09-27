@@ -12,7 +12,7 @@ const ProductItem = (props) => {
       <div className={styles.price}>{props.price}</div>
       <div className={styles.description}>{props.description}</div>
       <div className={styles.product__button_wrapper}>
-        <Link to="/edit/:id">
+        <Link to={`/edit/${props.id}`}>
           <button className={styles.button}>Edit</button>
         </Link>
         <button className={`${styles.button} ${styles.delete}`}>Delete</button>
