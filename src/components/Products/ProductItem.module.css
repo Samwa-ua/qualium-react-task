@@ -31,25 +31,11 @@
   align-items: center;
   gap: 0.2rem;
 }
+
 .button {
-  border: none;
-  background-color: #bb9c84;
-  color: white;
-  cursor: pointer;
-  width: 100px;
-  padding: 0.7rem 0.6rem;
-  border-radius: 10px;
-  font-weight: bold;
-}
-.button:hover,
-.button:active {
-  background-color: #8a4c33;
+  background-color: #c73f09 !important;
 }
 
-.button.delete {
-  background-color: #c73f09;
-}
-
-.button.delete:hover {
-  background-color: #700808;
+.button:hover {
+  background-color: #700808 !important;
 }

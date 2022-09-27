@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import styles from "./ProductItem.module.css";
 
 import Card from "../UI/Card";
+import Button from "../UI/Button";
 
 const ProductItem = (props) => {
   return (
@@ -13,10 +14,10 @@ const ProductItem = (props) => {
       <div className={styles.description}>{props.description}</div>
       <div className={styles.product__button_wrapper}>
         <Link to={`/edit/${props.id}`}>
-          <button className={styles.button}>Edit</button>
+          <Button>Edit</Button>
         </Link>
-        <button className={`${styles.button} ${styles.delete}`}>Delete</button>
-        <button className={styles.button}>Add to cart</button>
+        <Button className={styles.button}>Delete</Button>
+        <Button>Add to cart</Button>
       </div>
     </Card>
   );

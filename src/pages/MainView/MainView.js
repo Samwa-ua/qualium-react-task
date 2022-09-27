@@ -1,11 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import styles from "./MainView.module.css";
 
 import SearchForm from "../../components/SearchForm/SearchForm";
 import ProductsList from "../../components/Products/ProductsList";
 import Pagination from "../../components/Pagination/Pagination";
-import { Link } from "react-router-dom";
+import Button from "../../components/UI/Button";
 
 const MainView = () => {
   return (
@@ -15,7 +16,7 @@ const MainView = () => {
         <div className={styles["content-header"]}>
           <h2>Products</h2>
           <Link to="/edit/:id">
-            <button className={styles.button}>Create</button>
+            <Button>Create</Button>
           </Link>
           <select className={styles.select}>
             <option>Sort ⬆</option>
