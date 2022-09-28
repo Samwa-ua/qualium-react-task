@@ -1,5 +1,7 @@
 import { Route, Switch } from "react-router-dom";
 
+import { CartProvider } from "./context/CartContext";
+
 import Header from "./components/Layout/Header";
 import CartView from "./pages/CartView/CartView";
 import CreateView from "./pages/CreateView/CreateView";
@@ -10,26 +12,28 @@ import NotFound from "./pages/NotFound/NotFound";
 function App() {
   return (
     <>
-      <Header />
-      <main className="main-wrapper">
-        <Switch>
-          <Route exact path="/">
-            <MainView />
-          </Route>
-          <Route path="/create">
-            <CreateView />
-          </Route>
-          <Route path="/edit/:id">
-            <EditView />
-          </Route>
-          <Route path="/cart">
-            <CartView />
-          </Route>
-          <Route path="*">
-            <NotFound />
-          </Route>
-        </Switch>
-      </main>
+      <CartProvider>
+        <Header />
+        <main className="main-wrapper">
+          <Switch>
+            <Route exact path="/">
+              <MainView />
+            </Route>
+            <Route path="/create">
+              <CreateView />
+            </Route>
+            <Route path="/edit/:id">
+              <EditView />
+            </Route>
+            <Route path="/cart">
+              <CartView />
+            </Route>
+            <Route path="*">
+              <NotFound />
+            </Route>
+          </Switch>
+        </main>
+      </CartProvider>
     </>
   );
 }
