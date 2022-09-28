@@ -5,7 +5,9 @@ import styles from "./Button.module.css";
 const Button = (props) => {
   return (
     <button
-      className={`${styles.button} ${props.className}`}
+      className={`${styles.button} ${props.className} ${
+        props.disabled && styles.disabled
+      }`}
       type={props.type || "button"}
       onClick={props.onClick}
       disabled={props.disabled}
