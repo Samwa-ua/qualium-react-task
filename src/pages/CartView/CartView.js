@@ -10,7 +10,6 @@ import CartContext from "../../context/CartContext";
 
 const CartView = () => {
   const cartCtx = useContext(CartContext);
-  console.log(cartCtx);
 
   return (
     <div className={styles.container}>

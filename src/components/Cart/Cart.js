@@ -8,9 +8,12 @@ import CartItem from "./CartItem";
 const Cart = () => {
   const cartCtx = useContext(CartContext);
 
+  const cartItemRemoveHandler = (id) => {
+    cartCtx.removeItem(id);
+  };
+
   const cartItemAddHandler = (item) => {
     cartCtx.addItem({ ...item, amount: 1 });
-    console.log("+1");
   };
 
   const cartItems = (
@@ -22,6 +25,7 @@ const Cart = () => {
           price={item.price}
           description={item.description}
           amount={item.amount}
+          onRemove={cartItemRemoveHandler.bind(null, item.id)}
           onAdd={cartItemAddHandler.bind(null, item)}
         />
       ))}
