@@ -65,7 +65,9 @@ const CreateView = () => {
           ></textarea>
           <Button type="submit">Create</Button>
           <Link to="/">
-            <Button className={styles.btn}>Cancel</Button>
+            <Button className={styles.btn} warning={true}>
+              Cancel
+            </Button>
           </Link>
         </form>
       </Card>

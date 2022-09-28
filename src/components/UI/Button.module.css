@@ -10,6 +10,12 @@
   font-weight: bold;
 }
 
+.button.warning {
+  background-color: #c73f09;
+}
+.button.warning:hover {
+  background-color: #700808;
+}
 .button:disabled {
   cursor: not-allowed;
 }

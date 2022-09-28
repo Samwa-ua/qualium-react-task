@@ -31,11 +31,3 @@
   align-items: center;
   gap: 0.2rem;
 }
-
-.button {
-  background-color: #c73f09 !important;
-}
-
-.button:hover {
-  background-color: #700808 !important;
-}

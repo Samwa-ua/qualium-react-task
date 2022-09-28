@@ -12,12 +12,6 @@
 
 .btn {
   margin-left: 7rem;
-  background-color: #812121 !important;
-}
-.btn:hover,
-.btn.focus {
-  margin-left: 7rem;
-  background-color: #c51d1d !important;
 }
 
 .textarea {

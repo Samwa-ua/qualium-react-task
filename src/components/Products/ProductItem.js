@@ -35,7 +35,7 @@ const ProductItem = (props) => {
         <Link to={`/edit/${props.id}`}>
           <Button>Edit</Button>
         </Link>
-        <Button className={styles.button} onClick={handleDelete}>
+        <Button className={styles.button} warning={true} onClick={handleDelete}>
           Delete
         </Button>
         <Button disabled={disabled} onClick={handleAddToCart}>

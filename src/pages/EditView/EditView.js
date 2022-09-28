@@ -41,7 +41,7 @@ const EditView = () => {
           ></textarea>
           <Button type="submit">Save</Button>
           <Link to="/">
-            <Button className={styles.btn} type="submit">
+            <Button className={styles.btn} warning={true} type="submit">
               Cancel
             </Button>
           </Link>
