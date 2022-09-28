@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import styles from "./MainView.module.css";
@@ -9,8 +9,10 @@ import Pagination from "../../components/Pagination/Pagination";
 import Button from "../../components/UI/Button";
 
 const MainView = () => {
-  const handlePage = () => {
-    console.log("log from mainView");
+  const [pageNumber, setPageNumber] = useState(1);
+
+  const handlePage = (pageNumber) => {
+    setPageNumber(pageNumber);
   };
   return (
     <>
@@ -27,8 +29,8 @@ const MainView = () => {
           </select>
         </div>
       </section>
-      <ProductsList />
-      <Pagination handlePage={handlePage} />
+      <ProductsList page={pageNumber} />
+      <Pagination onChangePage={handlePage} />
     </>
   );
 };

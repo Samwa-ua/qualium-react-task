@@ -6,9 +6,8 @@ import ProductItem from "./ProductItem";
 import LoadingSpinner from "../UI/LoadingSpinner";
 
 const ProductsList = (props) => {
-  console.log(props);
   const { data: products, isPending } = useFetch(
-    `http://localhost:3001/products?_page=${1}&_limit=10`
+    `http://localhost:3001/products?_page=${props.page}&_limit=10`
   );
 
   const productsList = products.map((product) => (

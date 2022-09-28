@@ -13,7 +13,6 @@ const Cart = () => {
   };
 
   const cartItemDeleteHandler = (id) => {
-    console.log(cartCtx.items);
     cartCtx.deleteItem(id);
   };
 
