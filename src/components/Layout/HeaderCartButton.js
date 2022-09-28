@@ -8,7 +8,6 @@ import CartIcon from "../Cart/CartIcon";
 
 const HeaderCartButton = () => {
   const { items } = useContext(CartContext);
-  console.log(items);
   return (
     <button className={styles.button}>
       <span className={styles.icon}>
