@@ -12,6 +12,11 @@ const Cart = () => {
     cartCtx.removeItem(id);
   };
 
+  const cartItemDeleteHandler = (id) => {
+    console.log(cartCtx.items);
+    cartCtx.deleteItem(id);
+  };
+
   const cartItemAddHandler = (item) => {
     cartCtx.addItem({ ...item, amount: 1 });
   };
@@ -27,6 +32,7 @@ const Cart = () => {
           amount={item.amount}
           onRemove={cartItemRemoveHandler.bind(null, item.id)}
           onAdd={cartItemAddHandler.bind(null, item)}
+          onDelete={cartItemDeleteHandler.bind(null, item.id)}
         />
       ))}
       <div className={styles.total}>

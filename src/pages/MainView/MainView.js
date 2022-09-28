@@ -9,6 +9,9 @@ import Pagination from "../../components/Pagination/Pagination";
 import Button from "../../components/UI/Button";
 
 const MainView = () => {
+  const handlePage = () => {
+    console.log("log from mainView");
+  };
   return (
     <>
       <SearchForm />
@@ -25,7 +28,7 @@ const MainView = () => {
         </div>
       </section>
       <ProductsList />
-      <Pagination />
+      <Pagination handlePage={handlePage} />
     </>
   );
 };
