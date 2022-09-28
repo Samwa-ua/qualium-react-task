@@ -1,8 +1,7 @@
 .cart-wrapper {
-  margin: 0 auto;
+  margin: 1rem auto;
   width: 80%;
-  list-style: decimal;
-  list-style-position: inside;
+  list-style: none;
   background-color: antiquewhite;
   border-radius: 0.5rem;
 }

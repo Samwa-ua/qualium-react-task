@@ -8,6 +8,10 @@ import CartItem from "./CartItem";
 const Cart = () => {
   const cartCtx = useContext(CartContext);
 
+  const totalValue = cartCtx.items.reduce((curNumber, item) => {
+    return curNumber + item.price;
+  }, 0);
+
   const cartItems = (
     <ul className={styles["cart-wrapper"]}>
       {cartCtx.items.map((item) => (
@@ -19,7 +23,7 @@ const Cart = () => {
         />
       ))}
       <div className={styles.total}>
-        <h3>Total:$ </h3>
+        <h3>Total: $ {totalValue}</h3>
       </div>
     </ul>
   );

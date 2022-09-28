@@ -8,7 +8,7 @@ import Card from "../UI/Card";
 import Button from "../UI/Button";
 
 const ProductItem = (props) => {
-  const { addToCart } = useContext(CartContext);
+  const cartCtx = useContext(CartContext);
   const [disabled, setDisabled] = useState(false);
   const handleDelete = () => {
     fetch("http://localhost:3001/products/" + props.id, {
@@ -16,8 +16,14 @@ const ProductItem = (props) => {
     });
   };
 
-  const handleAddToCart = (e) => {
-    addToCart(props.title, props.price, props.description);
+  const handleAddToCart = (amount) => {
+    cartCtx.addItem({
+      id: props.id,
+      title: props.title,
+      price: props.price,
+      description: props.description,
+      amount: amount,
+    });
     setDisabled(true);
   };
   return (

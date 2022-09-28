@@ -1,6 +1,6 @@
 import { Route, Switch } from "react-router-dom";
 
-import { CartProvider } from "./context/CartContext";
+import CartProvider from "./context/CartProvider";
 
 import Header from "./components/Layout/Header";
 import CartView from "./pages/CartView/CartView";

@@ -7,14 +7,15 @@ import styles from "./HeaderCartButton.module.css";
 import CartIcon from "../Cart/CartIcon";
 
 const HeaderCartButton = () => {
-  const { items } = useContext(CartContext);
+  const cartCtx = useContext(CartContext);
+
   return (
     <button className={styles.button}>
       <span className={styles.icon}>
         <CartIcon />
       </span>
       <span>Cart</span>
-      <span className={styles.badge}>{items.length}</span>
+      <span className={styles.badge}>{cartCtx.items.length}</span>
     </button>
   );
 };
