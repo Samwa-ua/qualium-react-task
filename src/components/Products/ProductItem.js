@@ -16,13 +16,13 @@ const ProductItem = (props) => {
     });
   };
 
-  const handleAddToCart = (amount) => {
+  const handleAddToCart = () => {
     cartCtx.addItem({
       id: props.id,
       title: props.title,
       price: props.price,
       description: props.description,
-      amount: amount,
+      amount: 1,
     });
     setDisabled(true);
   };

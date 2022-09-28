@@ -14,8 +14,8 @@ const CartItem = (props) => {
         </div>
         <div className={styles.actions}>
           <Button>−1</Button>
-          <p className={styles.amount}>0</p>
-          <Button>+1</Button>
+          <p className={styles.amount}>{props.amount}</p>
+          <Button onClick={props.onAdd}>+1</Button>
           <Button warning={true}>delete</Button>
         </div>
       </li>

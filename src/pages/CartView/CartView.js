@@ -9,12 +9,13 @@ import Button from "../../components/UI/Button";
 import CartContext from "../../context/CartContext";
 
 const CartView = () => {
-  const { items } = useContext(CartContext);
+  const cartCtx = useContext(CartContext);
+  console.log(cartCtx);
 
   return (
     <div className={styles.container}>
       <>
-        {items.length === 0 ? (
+        {cartCtx.items.length === 0 ? (
           <div className={styles.cart}>
             <p>Your cart is empty</p>
             <Link to="/">
